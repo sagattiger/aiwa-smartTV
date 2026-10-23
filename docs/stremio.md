@@ -61,4 +61,5 @@ Habits:
 
 Look for `rust_oom`, `lowmemorykiller`, or `has died` near `com.stremio.one`.
 
-Status: debloat + reboot applied, **retest pending**.
+Status: debloat + reboot applied, cache set to 0 MB (confirmed in log). A second log
+(21:13–21:35) had no crash but also no playback, so **the retest is still pending**.

@@ -28,4 +28,22 @@ sponsored rows, but the top banner only goes away by replacing the launcher.
 .\scripts\restore.ps1 com.google.android.tvlauncher
 ```
 
-Status: **pending**. Projectivy not installed yet.
+If the TV ends up with no home screen, the `com.android.tv.settings/.system.FallbackHome`
+activity still exists. Run the restore command above from the laptop.
+
+## Applied (2026-10-22)
+
+- Projectivy Launcher (`com.spocky.projengmenu`) installed from the Play Store, opened
+  on the TV via `am start -a android.intent.action.VIEW -d market://details?id=com.spocky.projengmenu`.
+- `debloat.ps1 -ReplaceLauncher` disabled `com.google.android.tvlauncher`.
+- `cmd package set-home-activity com.spocky.projengmenu/.ui.home.MainActivity`, then HOME.
+
+Memory: Projectivy measured **353 MB PSS during its welcome wizard**, more than the
+stock launcher's 181 MB. Re-measure after setup:
+
+```powershell
+adb -s 192.168.15.128:5555 shell "dumpsys meminfo | grep projengmenu"
+```
+
+If it stays high, in Projectivy settings turn off video/animated wallpapers and
+use a plain or solid background.

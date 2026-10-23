@@ -17,4 +17,10 @@
 - Found DNS `192.168.15.105` down: IP not set on the Pi-hole host. Fixed and verified
   (see [pihole.md](pihole.md)).
 
-Pending: Projectivy launcher + `-ReplaceLauncher`, Stremio in-app settings, Stremio retest.
+- Stremio streaming-server cache set to 0 MB (confirmed in log: "Resizing cache size to 0MB").
+  Second log had no crash, but also no playback, so the fix is not confirmed yet.
+- Installed Projectivy Launcher, disabled stock `com.google.android.tvlauncher`, set
+  Projectivy as home (see [launcher.md](launcher.md)).
+
+Pending: finish Projectivy setup and re-measure its memory, external player
+(Just Player/VLC) in Stremio, Stremio playback retest.
