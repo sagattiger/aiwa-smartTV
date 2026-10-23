@@ -45,6 +45,7 @@ Set `$env:AIWA_TV_IP` if the TV's address changes.
 | [scripts/debloat.ps1](scripts/debloat.ps1) | Disables the ad/bloat list, halves UI animations. `-IncludeOptional`, `-ReplaceLauncher`, `-DryRun`. |
 | [scripts/restore.ps1](scripts/restore.ps1) | Re-enables all (or named) packages, resets animations. |
 | [scripts/packages.ps1](scripts/packages.ps1) | The package lists and why each one is there. |
+| [scripts/prepare-wallpapers.ps1](scripts/prepare-wallpapers.ps1) | Resizes a folder of images to 1920×1080 and pushes it to the TV. |
 | [scripts/collect-logs.ps1](scripts/collect-logs.ps1) | Records `logcat` to `logs/` while you reproduce a problem. |
 
 ## Docs
@@ -54,5 +55,6 @@ Set `$env:AIWA_TV_IP` if the TV's address changes.
 - [docs/launcher.md](docs/launcher.md): replacing the ad-banner launcher
 - [docs/stremio.md](docs/stremio.md): crash analysis and fixes
 - [docs/pihole.md](docs/pihole.md): DNS findings and blocklist
+- [docs/wallpapers.md](docs/wallpapers.md): custom home screen backgrounds
 - [docs/usb-storage.md](docs/usb-storage.md): does a USB stick help?
 - [docs/changelog.md](docs/changelog.md): what was done to the TV, when
