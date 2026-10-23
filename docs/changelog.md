@@ -22,7 +22,9 @@
   Projectivy as home (see [launcher.md](launcher.md)).
 - Projectivy set up: 144 MB PSS. Stremio moved first, Wi-Fi Display Sink tile hidden.
 - Wallpapers: 101 images resized to 1920×1080 and copied to `/sdcard/Pictures/Wallpapers`
-  (see [wallpapers.md](wallpapers.md)). The Folder source needs Projectivy Premium; not bought.
+  (see [wallpapers.md](wallpapers.md)).
+- Projectivy Premium bought by the owner. Wallpaper source set to Folder, images copied to
+  Projectivy's wallpapers folder: 100 wallpapers active. Projectivy at ~96 MB PSS,
+  `MemAvailable` 798 MB after restart.
 
-Pending: Projectivy Premium decision, external player (Just Player/VLC) in Stremio,
-Stremio playback retest.
+Pending: external player (Just Player/VLC) in Stremio, Stremio playback retest.

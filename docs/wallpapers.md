@@ -21,11 +21,17 @@ and triggers a media scan. `-NoPush` only builds the resized set locally.
 ## Using them in Projectivy
 
 Projectivy → Settings → Appearance → Wallpaper → **Launcher wallpaper → Folder**.
-`Folder` (and `Media file`) are **Premium** features (one-time R$37.99 via Google Play,
-seen 2026-10-22). Not purchased. The source is still **Reddit**.
+`Folder` (and `Media file`) are **Premium** features (one-time R$37.99 via Google Play).
+Premium was bought on 2026-10-22, and the source is now **Folder** (100 wallpapers shown).
 
-After buying Premium on the TV: pick **Folder** → `Pictures/Wallpapers`, then
-*Image transition* and *Update frequency* to taste.
+Projectivy's *Configure → Uri* defaults to its own app folder:
+`/sdcard/Android/data/com.spocky.projengmenu/files/wallpapers`. Instead of the file
+picker, the images are copied there over ADB (`prepare-wallpapers.ps1` does this and
+restarts the launcher to rescan). `Pictures/Wallpapers` keeps a copy for other apps.
+
+Projectivy reported 100 of the 101 files. One is either skipped or over a limit.
+
+Transition: *Zoom* (default). Change *Update frequency* in the same menu.
 
 Free options without Premium:
 - **Default wallpaper** or **Dynamic colors**: no internet fetches, lightest on memory.

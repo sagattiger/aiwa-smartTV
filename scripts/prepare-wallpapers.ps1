@@ -5,6 +5,8 @@ param(
     [Parameter(Mandatory)][string]$Source,
     [string]$OutDir = "$env:TEMP\aiwa-wallpapers",
     [string]$TvDir = '/sdcard/Pictures/Wallpapers',
+    # Projectivy's "Folder" wallpaper source reads from here by default (Premium).
+    [string]$ProjectivyDir = '/sdcard/Android/data/com.spocky.projengmenu/files/wallpapers',
     [int]$Width = 1920,
     [int]$Height = 1080,
     [int]$Quality = 85,
@@ -45,4 +47,9 @@ if (-not $NoPush) {
     # Let the gallery/media pickers see the new files.
     Invoke-TvShell "am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d 'file://$TvDir'" | Out-Null
     Invoke-TvShell "ls '$TvDir' | wc -l"
+    if ($ProjectivyDir) {
+        Invoke-TvShell "rm -rf '$ProjectivyDir'; mkdir -p '$ProjectivyDir'; cp '$TvDir'/*.jpg '$ProjectivyDir'/"
+        # Restart the launcher so it rescans the folder.
+        Invoke-TvShell 'am force-stop com.spocky.projengmenu; input keyevent KEYCODE_HOME'
+    }
 }
