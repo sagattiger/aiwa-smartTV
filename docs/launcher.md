@@ -47,3 +47,23 @@ adb -s 192.168.15.128:5555 shell "dumpsys meminfo | grep projengmenu"
 
 If it stays high, in Projectivy settings turn off video/animated wallpapers and
 use a plain or solid background.
+
+After setup: **144 MB PSS** (`TOTAL PSS 143693 kB`), vs 181 MB for the stock launcher.
+`MemAvailable` 637 MB.
+
+## Home screen layout
+
+Done with the remote's keys sent over ADB (`input keyevent`; long-press on a tile =
+`input keyevent --longpress KEYCODE_DPAD_CENTER` opens the tile menu).
+
+Rows: **Inputs** (HDMI 1–3, source picker) → **TV Apps** → **Watch Next** (your own
+YouTube history, no ads).
+
+TV Apps order: Stremio, TV (live tuner), MMP (USB media player), Netflix, Play Store,
+Prime Video, YouTube, YouTube Music.
+
+- Stremio moved to first: tile menu → *Reorder* → LEFT ×5 → OK.
+- **Wi-Fi Display Sink** (`com.mediatek.androidbox`, Miracast receiver) hidden: tile menu →
+  *Hide*. Screen mirroring still works; unhide from Projectivy settings → hidden apps.
+
+Tile menus contain **Uninstall**. When scripting key presses, count rows carefully.

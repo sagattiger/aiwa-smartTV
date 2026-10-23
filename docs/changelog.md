@@ -22,5 +22,7 @@
 - Installed Projectivy Launcher, disabled stock `com.google.android.tvlauncher`, set
   Projectivy as home (see [launcher.md](launcher.md)).
 
-Pending: finish Projectivy setup and re-measure its memory, external player
+- Projectivy set up: 144 MB PSS. Stremio moved first, Wi-Fi Display Sink tile hidden.
+
+Pending: external player
 (Just Player/VLC) in Stremio, Stremio playback retest.
