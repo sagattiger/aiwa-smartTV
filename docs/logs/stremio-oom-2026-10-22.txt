@@ -1,0 +1,60 @@
+10-22 21:04:47.460 I/StremioServer(10303): Using app path -> /data/user/0/com.stremio.one/files/stremio-server
+10-22 21:04:56.067 F/libc    (10303): Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 10391 (CONCURRENT_RUNT), pid 10303 (com.stremio.one)
+10-22 21:04:56.160 W/Glide   (10303): Load failed for [null] with dimensions [0x0]
+10-22 21:04:56.160 W/Glide   (10303): class com.bumptech.glide.load.engine.GlideException: Received null model
+10-22 21:04:56.162 W/Glide   (10303): Load failed for [null] with dimensions [0x0]
+10-22 21:04:56.162 W/Glide   (10303): class com.bumptech.glide.load.engine.GlideException: Received null model
+10-22 21:04:56.203 D/hwcomposer(  347): HWCDisplayDevicePrimary::checkCanSkipValidate: UI layer has something changed!!!! 1
+10-22 21:04:56.216 I/OpenGLRenderer(10303): Davey! duration=1179ms; Flags=1, IntendedVsync=19383476133063, Vsync=19384492799689, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=19384508148130, AnimationStart=19384508152047, PerformTraversalsStart=19384604421130, DrawStart=19384618243213, SyncQueued=19384634780546, SyncStart=19384636579546, IssueDrawCommandsStart=19384638264880, SwapBuffers=19384655056380, FrameCompleted=19384657253963, DequeueBufferDuration=286500, QueueBufferDuration=710333, GpuCompleted=19378957268568, 
+10-22 21:04:56.322 I/crash_dump32(10563): obtaining output fd from tombstoned, type: kDebuggerdTombstone
+10-22 21:04:56.333 I/tombstoned(  271): received crash request for pid 10391
+10-22 21:04:56.357 I/crash_dump32(10563): performing dump of process 10303 (target tid = 10391)
+10-22 21:04:56.394 W/Glide   (10303): Load failed for [null] with dimensions [0x0]
+10-22 21:04:56.394 W/Glide   (10303): class com.bumptech.glide.load.engine.GlideException: Received null model
+10-22 21:04:56.430 F/DEBUG   (10563): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-22 21:04:56.430 F/DEBUG   (10563): Build fingerprint: 'AIWA/KTC_AIWA_4K_SA_21V2/zhongshan:11/RTMA.250416.197/13994005:user/release-keys'
+10-22 21:04:56.430 F/DEBUG   (10563): Revision: '1234'
+10-22 21:04:56.430 F/DEBUG   (10563): ABI: 'arm'
+10-22 21:04:56.432 F/DEBUG   (10563): Timestamp: 2026-10-22 21:04:56-0300
+10-22 21:04:56.432 F/DEBUG   (10563): pid: 10303, tid: 10391, name: CONCURRENT_RUNT  >>> com.stremio.one <<<
+10-22 21:04:56.432 F/DEBUG   (10563): uid: 10087
+10-22 21:04:56.432 F/DEBUG   (10563): signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+10-22 21:04:56.432 F/DEBUG   (10563):     r0  00000000  r1  00002897  r2  00000006  r3  1596c088
+10-22 21:04:56.432 F/DEBUG   (10563):     r4  1596c09c  r5  1596c080  r6  0000283f  r7  0000016b
+10-22 21:04:56.432 F/DEBUG   (10563):     r8  1596c088  r9  1596c098  r10 1596c0b8  r11 1596c0a8
+10-22 21:04:56.432 F/DEBUG   (10563):     ip  00002897  sp  1596c058  lr  a8ecbb0d  pc  a8ecbb20
+10-22 21:04:56.479 F/DEBUG   (10563): backtrace:
+10-22 21:04:56.480 F/DEBUG   (10563):       #00 pc 00062b20  /apex/com.android.runtime/lib/bionic/libc.so (abort+172) (BuildId: 41739736b0ff057ce79f3b92ab12d8d4)
+10-22 21:04:56.480 F/DEBUG   (10563):       #01 pc 0100b6a5  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.480 F/DEBUG   (10563):       #02 pc 01005199  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (_RNvNtCs8HoJiArgbcH_3std7process5abort+4) (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.480 F/DEBUG   (10563):       #03 pc 00fee6a9  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.480 F/DEBUG   (10563):       #04 pc 00fe4c11  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.480 F/DEBUG   (10563):       #05 pc 0100509f  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (_RNvNtCs8HoJiArgbcH_3std5alloc8rust_oom+10) (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.481 F/DEBUG   (10563):       #06 pc 00fefbdf  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (_RNvCsfLfy6EI15iL_7___rustc26___rust_alloc_error_handler+10) (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.481 F/DEBUG   (10563):       #07 pc 01035f17  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (_RNvNtCsiwnOk6GpMI3_5alloc5alloc18handle_alloc_error+10) (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.481 F/DEBUG   (10563):       #08 pc 01035f25  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (_RNvNtCsiwnOk6GpMI3_5alloc7raw_vec12handle_error+10) (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.481 F/DEBUG   (10563):       #09 pc 00810001  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.481 F/DEBUG   (10563):       #10 pc 0080cf57  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.481 F/DEBUG   (10563):       #11 pc 0074385d  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.481 F/DEBUG   (10563):       #12 pc 0074642b  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.482 F/DEBUG   (10563):       #13 pc 007628c5  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.482 F/DEBUG   (10563):       #14 pc 006c9893  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.482 F/DEBUG   (10563):       #15 pc 006bdce5  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.482 F/DEBUG   (10563):       #16 pc 005a2c97  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.482 F/DEBUG   (10563):       #17 pc 006bb895  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.485 F/DEBUG   (10563):       #18 pc 006bd58f  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.486 F/DEBUG   (10563):       #19 pc 006cc77d  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.486 F/DEBUG   (10563):       #20 pc 006da91d  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.487 F/DEBUG   (10563):       #21 pc 00799cb3  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.487 F/DEBUG   (10563):       #22 pc 00d1d097  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.487 F/DEBUG   (10563):       #23 pc 00d1cc3d  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.487 F/DEBUG   (10563):       #24 pc 00d12fd7  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.487 F/DEBUG   (10563):       #25 pc 00d1b16f  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (tokio::runtime::scheduler::multi_thread::worker::run::h8a3be5119cd9d60d+146) (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.487 F/DEBUG   (10563):       #26 pc 00d27d67  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.488 F/DEBUG   (10563):       #27 pc 00d05cdb  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.488 F/DEBUG   (10563):       #28 pc 00d19359  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.488 F/DEBUG   (10563):       #29 pc 00d28f4b  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.488 F/DEBUG   (10563):       #30 pc 00d2dd4d  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.488 F/DEBUG   (10563):       #31 pc 0100db01  /data/app/~~aZth5VAKQyUMSoqNPr9PNw==/com.stremio.one-9r93nD2ILbiX4fveNRqgTA==/lib/arm/libstremio_core_kotlin.so (BuildId: 8c6d34150839ee604dee6717d596e987d0ef438b)
+10-22 21:04:56.489 F/DEBUG   (10563):       #32 pc 000aabb3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 41739736b0ff057ce79f3b92ab12d8d4)
+10-22 21:04:56.489 F/DEBUG   (10563):       #33 pc 00064023  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 41739736b0ff057ce79f3b92ab12d8d4)
