@@ -55,6 +55,7 @@ Set `$env:AIWA_TV_IP` if the TV's address changes.
 - [docs/launcher.md](docs/launcher.md): replacing the ad-banner launcher
 - [docs/stremio.md](docs/stremio.md): crash analysis and fixes
 - [docs/pihole.md](docs/pihole.md): DNS findings and blocklist
+- [docs/gaming.md](docs/gaming.md): Xbox Series S settings and what the TV supports
 - [docs/wallpapers.md](docs/wallpapers.md): custom home screen backgrounds
 - [docs/usb-storage.md](docs/usb-storage.md): does a USB stick help?
 - [docs/changelog.md](docs/changelog.md): what was done to the TV, when
