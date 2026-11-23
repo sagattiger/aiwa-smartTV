@@ -38,6 +38,36 @@ The Android UI runs at 1920×1080. The 4K panel is used for HDMI and video, so t
 Picture settings on MediaTek TVs are per input and per picture mode. Set them while the
 Xbox input is on screen.
 
+## Applied 2026-11-22 (Xbox input, "Game console")
+
+Written with `settings put global ...` while the Xbox input was on screen, then checked in the
+TV's own menu (Settings → Picture → Advanced Video) by reading it with `uiautomator dump`.
+Screenshots are blocked on HDMI inputs.
+
+| Setting | Before | After (seen in TV menu) |
+|---|---|---|
+| Picture Mode | Game (HDR10) | Game (HDR10), unchanged |
+| ALLM | 0 | **On** |
+| MJC effect | 2 | **Off** |
+| DNR | 4 | **Off** |
+| MPEG NR | 2 | **Off** |
+| AISR | 3 | 0 (not shown in this menu) |
+| Low Blue Light | 1 | **Off** |
+| Game Mode switch | 0 | still 0, **greyed out**: the TV locks it while Picture Mode is Game + ALLM. Writing `1` is reset by the TV. |
+
+Input banner after the change: **"Game console · HDR10 2160p UHD"**: the Xbox is
+sending 4K with HDR10.
+
+Undo (original values):
+
+```powershell
+adb -s 192.168.15.128:5555 shell "settings put global tv_picture_video_allm 0; settings put global tv_picture_advance_video_mjc_effect 2; settings put global tv_picture_advance_video_dnr 4; settings put global tv_picture_advance_video_mpeg_nr 2; settings put global tv_picture_video_aisr 3; settings put global tv_picture_video_low_bluelight 1"
+```
+
+Menu navigation notes: the TV's Settings key opens *TV options*; **Back closes the whole
+panel**; the first key press after opening is sometimes ignored. Check focus with
+`uiautomator dump` before pressing OK, because Picture ends with *Reset to Default*.
+
 ## Xbox Series S settings for this TV
 
 - Resolution **4K UHD**, refresh **60 Hz** (no 120 Hz panel).
